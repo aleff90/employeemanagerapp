@@ -19,10 +19,10 @@ export class AppComponent implements OnInit {
 
   ngOnInit() {
     this.getEmployees();
-    this.getUdemyCourse();
+    //this.getUdemyCourse();
   }
 
-  public getUdemyCourse(): void {
+  /*public getUdemyCourse(): void {
     console.log('Fetching all courses...');
       this.employeeService.getUdemyCourse().subscribe(
         (response: any) => {
@@ -33,7 +33,7 @@ export class AppComponent implements OnInit {
           console.error(error);
         }
     );
-  }
+  }*/
 
   public getEmployees(): void {
     console.log('Fetching all employees...');
@@ -96,7 +96,7 @@ export class AppComponent implements OnInit {
     );
   }
 
-  public onDeleteEmployee(employeeId: number): void {
+  /*public onDeleteEmployee(employeeId: number): void {
     console.log(`Deleting employee by id: ${employeeId}`);
       this.employeeService.deleteEmployee(employeeId).subscribe(
         (response: Employee) => {
@@ -108,7 +108,7 @@ export class AppComponent implements OnInit {
           console.error(error);
         }
     );
-  }
+  }*/
 
   public onOpenModal(employee: Employee, mode: string): void {
     const container = document.getElementById('main-container');

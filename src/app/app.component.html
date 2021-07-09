@@ -3,7 +3,7 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarColor02">
+    <!--<div class="collapse navbar-collapse" id="navbarColor02">
        <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
              <a class="nav-link" (click)="onOpenModal(null, 'add')">Add Employee <span class="sr-only">(current)</span></a>
@@ -13,7 +13,7 @@
           <input type="search" (ngModelChange)="searchEmployees(key.value)" #key="ngModel" ngModel
            name="key" id="searchName" class="form-control mr-sm-2" placeholder="Search employees..." required>
        </form>
-    </div>
+    </div>-->
   </nav>
   <div class="container" id="main-container">
   <div class="row">
@@ -52,7 +52,7 @@
             <span aria-hidden="true">&times;</span>
             </button>
          </div>
-         <div class="modal-body">
+         <!--<div class="modal-body">
             <form #addForm="ngForm" (ngSubmit)="onAddEmloyee(addForm)">
             <div class="form-group">
                <label for="name">Name</label>
@@ -78,7 +78,7 @@
                <button type="button" id="add-employee-form" class="btn btn-secondary" data-dismiss="modal">Close</button>
                <button [disabled]="addForm.invalid" type="submit" class="btn btn-primary" >Save changes</button>
             </div>
-            </form>
+            </form>-->
          </div>
       </div>
     </div>
@@ -95,7 +95,7 @@
              </button>
           </div>
           <div class="modal-body">
-             <form #editForm="ngForm">
+             <!--<form #editForm="ngForm">
                 <div class="form-group">
                    <label for="name">Name</label>
                    <input type="text" ngModel="{{editEmployee?.name}}" name="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Name">
@@ -122,7 +122,7 @@
                    <button type="button" id="" data-dismiss="modal" class="btn btn-secondary">Close</button>
                    <button (click)="onUpdateEmloyee(editForm.value)" data-dismiss="modal" class="btn btn-primary" >Save changes</button>
                 </div>
-             </form>
+             </form>-->
           </div>
        </div>
     </div>
@@ -142,12 +142,11 @@
              <p>Are you sure you want to delete employee {{deleteEmployee?.name}}?</p>
              <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-dismiss="modal">No</button>
-                <button (click)="onDeleteEmloyee(deleteEmployee?.id)" class="btn btn-danger" data-dismiss="modal">Yes</button>
+                <!--<button (click)="onDeleteEmloyee(deleteEmployee?.id)" class="btn btn-danger" data-dismiss="modal">Yes</button>-->
              </div>
           </div>
        </div>
     </div>
-  </div>
   </div>
   
   <!-- Notification for no employees -->
