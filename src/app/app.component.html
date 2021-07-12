@@ -3,17 +3,16 @@
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
     </button>
-    <!--<div class="collapse navbar-collapse" id="navbarColor02">
+    <div class="collapse navbar-collapse" id="navbarColor02">
        <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-             <a class="nav-link" (click)="onOpenModal(null, 'add')">Add Employee <span class="sr-only">(current)</span></a>
+             <a class="nav-link" data-toggle="modal" data-target="#exampleModal">Add Employee <span class="sr-only">(current)</span></a>
           </li>
        </ul>
        <form class="form-inline my-2 my-lg-0">
-          <input type="search" (ngModelChange)="searchEmployees(key.value)" #key="ngModel" ngModel
-           name="key" id="searchName" class="form-control mr-sm-2" placeholder="Search employees..." required>
+          <input type="search" name="key" id="searchName" class="form-control mr-sm-2" placeholder="Search employees..." required>
        </form>
-    </div>-->
+    </div>
   </nav>
   <div class="container" id="main-container">
   <div class="row">

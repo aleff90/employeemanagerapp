@@ -36,14 +36,14 @@ export class AppComponent implements OnInit {
   }*/
 
   public getEmployees(): void {
-    console.log('Fetching all employees...');
+    /*console.log('Fetching all employees...');*/
       this.employeeService.getEmployees().subscribe(
         (response: Employee[]) => {
-          console.log(response);
+          /*console.log(response);*/
           this.employees = response;
         },
         (error: HttpErrorResponse) => {
-          console.error(error);
+          alert(error.message);
         }
     );
   }
@@ -114,17 +114,21 @@ export class AppComponent implements OnInit {
     const container = document.getElementById('main-container');
     const button = document.createElement('button');
     button.type = 'button';
+    button.style.display = 'name';
     button.setAttribute('data-toggle', 'modal');
+    if (mode === 'add') {
+      //this.editEmployee = employee;
+      button.setAttribute('data-target', '#addEmployeeModal');
+    }
     if (mode === 'edit') {
-      this.editEmployee = employee;
+      //this.editEmployee = employee;
       button.setAttribute('data-target', '#updateEmployeeModal');
     }
     if (mode === 'delete') {
-      this.deleteEmployee = employee;
+      //this.deleteEmployee = employee;
       button.setAttribute('data-target', '#deleteEmployeeModal');
     }
     container.appendChild(button);
     button.click();
   }
-
 }
