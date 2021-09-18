@@ -29,3 +29,6 @@ describe('AppComponent', () => {
     expect(compiled.querySelector('.content span').textContent).toContain('employeemanagerapp app is running!');
   });
 });
+function beforeEach(arg0: () => Promise<void>) {
+  throw new Error('Function not implemented.');
+}
